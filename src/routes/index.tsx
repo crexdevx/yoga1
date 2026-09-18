@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 import communityYogaImg from "@/assets/community-yoga-class.webp";
 import whyYogaImg from "@/assets/why-yoga-benefits.webp";
@@ -181,6 +182,24 @@ export const Route = createFileRoute("/")({
 });
 
 export function Index() {
+  const heroVideoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = heroVideoRef.current;
+    if (!video) return;
+    const play = () => {
+      video.play().catch(() => {});
+    };
+    if (video.readyState >= 2) {
+      play();
+    } else {
+      video.addEventListener("loadeddata", play, { once: true });
+    }
+    return () => {
+      video.removeEventListener("loadeddata", play);
+    };
+  }, []);
+
   return (
     <main className="bg-about-canvas">
       <section
@@ -188,6 +207,7 @@ export function Index() {
         className="relative aspect-[9/16] max-h-[100svh] w-full overflow-hidden bg-about-canvas sm:aspect-[16/9]"
       >
         <video
+          ref={heroVideoRef}
           className="absolute inset-0 h-full w-full object-cover"
           autoPlay
           muted
@@ -202,7 +222,7 @@ export function Index() {
         <FloatingHeader />
 
         {/* Left-aligned hero copy — kept clear of the figure on the right */}
-        <div className="absolute inset-0 z-10 flex items-start pt-32 sm:pt-40 lg:pt-52">
+        <div className="absolute inset-0 z-10 flex items-start pt-36 sm:pt-44 lg:pt-56">
           <div className="max-w-[48%] px-4 sm:max-w-md sm:px-10 lg:max-w-lg lg:px-14">
             <p className="text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-white/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] sm:text-xs">
               Welcome to our
