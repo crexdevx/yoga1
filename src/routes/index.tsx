@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 import communityYogaImg from "@/assets/community-yoga-class.webp";
-import whyYogaImg from "@/assets/why-yoga-benefits.webp";
+import whyYogaImg from "@/assets/why-yoga-benefits-new.png.asset.json";
 import heroPosterImg from "@/assets/yoga-hero-poster.webp";
 import courseYogaPranayama from "@/assets/course-yoga-pranayama.webp";
 import courseYogaEducation from "@/assets/course-yoga-education.webp";
