@@ -203,11 +203,11 @@ export function Index() {
 
         {/* Left-aligned hero copy — kept clear of the figure on the right */}
         <div className="absolute inset-0 z-10 flex items-end pb-[12vw] sm:items-center sm:pb-0">
-          <div className="max-w-[55%] px-4 sm:max-w-md sm:px-10 lg:max-w-lg lg:px-14">
+          <div className="max-w-[48%] px-4 sm:max-w-md sm:px-10 lg:max-w-lg lg:px-14">
             <p className="text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-white/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] sm:text-xs">
               Welcome to our
             </p>
-            <h2 className="mt-2 font-serif text-3xl leading-[1.05] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)] sm:text-5xl lg:text-6xl">
+            <h2 className="mt-2 font-serif text-2xl leading-[1.05] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)] sm:text-5xl lg:text-6xl">
               Holistic
               <span className="block">Sanctuary</span>
             </h2>
