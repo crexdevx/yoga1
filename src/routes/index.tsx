@@ -207,6 +207,7 @@ export function Index() {
         className="relative aspect-[9/16] max-h-[100svh] w-full overflow-hidden bg-about-canvas sm:aspect-[16/9]"
       >
         <video
+          ref={heroVideoRef}
           className="absolute inset-0 h-full w-full object-cover"
           autoPlay
           muted
