@@ -31,7 +31,7 @@ export function FloatingHeader() {
         to="/"
         preload="render"
         onClick={() => setOpen(false)}
-        className="group absolute left-4 top-4 z-30 sm:left-6 sm:top-6"
+        className="group absolute left-4 top-4 z-30 flex items-center gap-3 sm:left-6 sm:top-6"
         aria-label="North East Yoga and Meditation Centre — home"
       >
         <img
@@ -43,6 +43,10 @@ export function FloatingHeader() {
           decoding="async"
           fetchPriority="high"
         />
+        <span className="font-serif text-sm font-semibold uppercase leading-snug tracking-[0.14em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] sm:text-base">
+          North East Yoga &amp;
+          <span className="block">Meditation Centre</span>
+        </span>
       </Link>
 
       <nav

@@ -201,6 +201,44 @@ export function Index() {
         </video>
         <FloatingHeader />
 
+        {/* Left-aligned hero copy — kept clear of the figure on the right */}
+        <div className="absolute inset-0 z-10 flex items-end pb-[12vw] sm:items-center sm:pb-0">
+          <div className="max-w-[48%] px-4 sm:max-w-md sm:px-10 lg:max-w-lg lg:px-14">
+            <p className="text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-white/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] sm:text-xs">
+              Welcome to our
+            </p>
+            <h2 className="mt-2 font-serif text-2xl leading-[1.05] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)] sm:text-5xl lg:text-6xl">
+              Holistic
+              <span className="block">Sanctuary</span>
+            </h2>
+            <p className="mt-3 text-[0.6rem] font-medium uppercase tracking-[0.12em] text-why-cta drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] sm:mt-4 sm:text-xs sm:tracking-[0.22em]">
+              Quality Training for Healthy Living
+            </p>
+            <p className="mt-3 text-[0.7rem] leading-relaxed text-white/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] sm:mt-5 sm:text-sm sm:leading-7">
+              North East Yoga and Meditation Centre in Guwahati, Assam, is a
+              premier sanctuary for holistic well-being and professional growth.
+              Whether you are seeking personal healing or aspiring to become a
+              certified instructor, our expert-led programs empower you to
+              transform your life.
+            </p>
+            <p className="mt-2 hidden text-[0.7rem] leading-relaxed text-white/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] sm:mt-4 sm:block sm:text-sm sm:leading-7">
+              Experience the authentic power of daily practices, or build your
+              career with our accredited yoga teacher training and diploma
+              certifications.
+            </p>
+            <Button
+              asChild
+              size="lg"
+              className="group mt-4 h-auto gap-2 rounded-full bg-why-cta px-5 py-2.5 text-xs font-semibold text-why-cta-text shadow-lg transition-transform duration-300 hover:-translate-y-0.5 hover:bg-why-cta-hover sm:mt-6 sm:px-7 sm:py-3.5 sm:text-sm"
+            >
+              <Link to="/about">
+                Join the Community
+                <ArrowUpRight aria-hidden="true" className="size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+
         <svg
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 bottom-[-1px] z-10 h-[9vw] min-h-14 w-full text-about-canvas sm:h-[7vw] sm:min-h-16"
