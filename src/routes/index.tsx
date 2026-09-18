@@ -182,6 +182,24 @@ export const Route = createFileRoute("/")({
 });
 
 export function Index() {
+  const heroVideoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = heroVideoRef.current;
+    if (!video) return;
+    const play = () => {
+      video.play().catch(() => {});
+    };
+    if (video.readyState >= 2) {
+      play();
+    } else {
+      video.addEventListener("loadeddata", play, { once: true });
+    }
+    return () => {
+      video.removeEventListener("loadeddata", play);
+    };
+  }, []);
+
   return (
     <main className="bg-about-canvas">
       <section
