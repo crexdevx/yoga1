@@ -221,7 +221,7 @@ export function Index() {
         <FloatingHeader />
 
         {/* Left-aligned hero copy — kept clear of the figure on the right */}
-        <div className="absolute inset-0 z-10 flex items-start pt-40 sm:pt-48 lg:pt-60">
+        <div className="absolute inset-0 z-10 flex items-start pt-36 sm:pt-44 lg:pt-56">
           <div className="max-w-[48%] px-4 sm:max-w-md sm:px-10 lg:max-w-lg lg:px-14">
             <p className="text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-white/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] sm:text-xs">
               Welcome to our
