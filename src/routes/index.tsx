@@ -211,7 +211,7 @@ export function Index() {
               Holistic
               <span className="block">Sanctuary</span>
             </h2>
-            <p className="mt-3 text-[0.65rem] font-medium uppercase tracking-[0.22em] text-why-cta drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] sm:mt-4 sm:text-xs">
+            <p className="mt-3 text-[0.6rem] font-medium uppercase tracking-[0.12em] text-why-cta drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] sm:mt-4 sm:text-xs sm:tracking-[0.22em]">
               Quality Training for Healthy Living
             </p>
             <p className="mt-3 text-[0.7rem] leading-relaxed text-white/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] sm:mt-5 sm:text-sm sm:leading-7">
