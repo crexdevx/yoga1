@@ -339,7 +339,7 @@ export function Index() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="order-2 lg:order-1">
             <img
-              src={whyYogaImg}
+              src={whyYogaImg.url}
               alt="Illustration of yoga benefits: strength, flexibility, immunity, calm mind, focus, and better sleep"
               className="mx-auto w-full max-w-lg"
               width={1200}
