@@ -43,7 +43,7 @@ export function FloatingHeader() {
           decoding="async"
           fetchPriority="high"
         />
-        <span className="font-serif text-sm font-semibold uppercase leading-snug tracking-[0.14em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] sm:text-base">
+        <span className="font-serif text-[0.65rem] font-semibold uppercase leading-snug tracking-[0.14em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] sm:text-xs">
           North East Yoga &amp;
           <span className="block">Meditation Centre</span>
         </span>
